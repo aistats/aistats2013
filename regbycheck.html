@@ -1,0 +1,132 @@
+---
+layout: default
+---
+
+<script type="text/javascript">
+    document.getElementById('LNreg').id='leftcurrent';
+</script>
+
+<script type="text/javascript">
+var prices = new Array();
+prices[0] = 550;
+prices[1] = 450;
+prices[2] = 250;
+prices[3] = 0;
+function setprice(pr) {
+    document.getElementById('product-price').textContent=pr;
+    document.getElementById('price-input').value=pr;
+}
+</script>
+
+<div class="contents">
+
+<HR>
+
+  Please select a registration option below.&nbsp; Please make sure to enter your name and affiliation, as well as your food preference.&nbsp; Then click &ldquo;Register&rdquo;, which will lead you to a confirmation page.&nbsp; Make your check payable to
+<blockquote>
+Society for AI and Statistics
+</blockquote>
+Print the confirmation page and mail it, along with your check for the correct amount, to:
+<blockquote>
+SAIAS, Inc.<br>
+c/o Daryl Pregibon<br>
+706 Hudson St<br>
+Hoboken, NJ 07030&nbsp;&nbsp;&nbsp;USA
+</blockquote>
+<!--
+Karen Smith<br>
+NEC Labs America<br> 
+4 Independence Way, Suite 200<br>
+Princeton, NJ 08540 USA<br>
+Fax: 609-951-2482<br>
+Email: karen (at) nec-labs.com -->
+Please write the registrant's email address on the check to ensure that it gets credited to the right account.
+<p>
+
+<hr>
+<table border="0" cellpadding="2" cellspacing="0" width="500" align="center">
+    <tr><td><b>Early registration</b>: Mar. 17 (23:59 UTC) or before</td>
+<td><strike>$450</strike></td>
+</tr>
+    <tr><td><b>Student early registration</b>: full-time students with ID, Mar. 17 (23:59 UTC) or before</td>
+<td><strike>$250</strike></td>
+</tr>
+    <tr><td><b>Regular registration</b>: after Mar. 17, including students</td>
+<td>$550</td>
+</tr>
+</table>
+
+<HR>
+
+<form method="post" action="verify.php">
+    <table cellpadding="5" cellspacing="0">
+        <tr>
+            <td align="left">
+                <select id="regtype" name="type" onchange="setprice(prices[selectedIndex])">
+                    <option value="regular registration" selected="true">AISTATS regular registration</option>
+                    <option value="early registration" disabled="disabled">AISTATS early registration</option>
+                    <option value="student registration" disabled="disabled">AISTATS student early registration</option>
+                    <option value="free registration">AISTATS free registration (prior permission required)</option>
+                </select>
+            </td>
+	</tr>
+	<tr>
+            <td align="left">
+      		<select name="vegetarian">
+		    <option value="non-vegetarian">Non-vegetarian</option>
+		    <option value="vegetarian">Vegetarian</option>
+                </select>
+            </td>
+	</tr>
+	<tr>
+            <td align="left">
+	    Name (for badge):
+	    <input type="text" name="name" size="30" maxlength="100" value=""/>
+            </td>
+        </tr>
+	<tr>
+            <td align="left">
+	    Affiliation (for badge):
+	    <input type="text" name="affiliation" size="30" maxlength="100" value=""/>
+            </td>
+        </tr>
+	<tr>
+            <td align="left">
+	    Email address (to contact in case of problems):
+	    <input type="text" name="email" size="30" maxlength="200" value=""/>
+            </td>
+        </tr>
+	<tr>
+	    <td align="left">
+	        <input name="attendee-list" type="checkbox" checked value="include in attendee list">OK to include me in list of attendees</input></td>
+        </tr>
+	<tr>
+	    <td align="left">
+	        Price: $<span id="product-price">.</span>
+                <input type="hidden" id="price-input" name="price" value=""/>
+	    </td>
+	    <td align="left">
+		<input type="submit" value="Register"/>
+	    </td>
+       </tr>
+    </table>
+</form>
+
+<hr>
+
+If you have been approved for a free registration, please select
+&ldquo;free registration&rdquo; from the drop-down menu.&nbsp; Free
+registration is by permission from the organizers only (we will check
+your name against our list).<p>
+
+<HR>
+
+<br>
+<div align="right"><a href="policy.php">Policies</a></div>
+</div>
+
+<script> 
+setprice(prices[document.getElementById('regtype').selectedIndex]);
+</script>
+
+<!--- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
