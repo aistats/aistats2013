@@ -40,8 +40,8 @@ conference:
   instance: 16th
   styling: International Conference on
   dates:
-  - 2013-04-20
-  - 2013-04-22
+  - 2013-04-29
+  - 2013-05-01
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
