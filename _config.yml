@@ -9,17 +9,40 @@ url: "http://www.aistats.org" # the base hostname & protocol for your site
 #twitter_username: aistat
 github_username:  aistats
 
-# Build settings
-markdown: kramdown
+author:
+  name: AISTATS
+comments: false
+plugins:
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+
+ghub:
+  edit: true
+  repository: aistats2013
+banner:
+  image: resort.png
+
+
+conference:
+  draft: false # set to True if the programme is draft only.
+  logo: logo.jpg
+  hide_tentative: true
+  proceedings:
+    url: http://proceedings.mlr.press/v31/
+    show: true
+  room: Room
+  venue: DoubleTree Paradise Valley Resort
+  venue_url: https://doubletree3.hilton.com/en/hotels/arizona/doubletree-resort-by-hilton-hotel-paradise-valley-scottsdale-PHXSJDT/index.html
+  location: Scottsdale, AZ, USA
+  full_name: Artificial Intelligence and Statistics
+  name: AISTATS
+  year: 2012
+  instance: 16th
+  styling: International Conference on
+  dates:
+  - 2012-05-29
+  - 2012-05-31
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
-
-# Handling Reading
-#safe:         false
-#include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
