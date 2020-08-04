@@ -1,9 +1,8 @@
-
 # Site settings
 title: Artificial Intelligence and Statistics Conference
 email: 
 description: > # this means to ignore newlines until "baseurl:"
-  This is the website of the AISTATS conference.
+  This is the website of the AISTATS 2013 conference.
 baseurl: "/aistats2013" # the subpath of your site, e.g. /blog/
 url: "http://www.aistats.org" # the base hostname & protocol for your site
 #twitter_username: aistat
@@ -13,19 +12,21 @@ author:
   name: AISTATS
 comments: false
 plugins:
+- jekyll-feed
+- jekyll-seo-tag
 - jekyll-remote-theme
 remote_theme: lawrennd/proceedings
+style: aistats
 
 ghub:
   edit: true
   repository: aistats2013
-banner:
-  image: resort.png
+banner: resort.png
 
 
 conference:
   draft: false # set to True if the programme is draft only.
-  logo: logo.jpg
+  image: HotelDT.jpg
   hide_tentative: true
   proceedings:
     url: http://proceedings.mlr.press/v31/
@@ -35,13 +36,37 @@ conference:
   venue_url: https://doubletree3.hilton.com/en/hotels/arizona/doubletree-resort-by-hilton-hotel-paradise-valley-scottsdale-PHXSJDT/index.html
   location: Scottsdale, AZ, USA
   full_name: Artificial Intelligence and Statistics
-  name: AISTATS
-  year: 2012
+  short_name: AISTATS
+  name: Artificial Intelligence and Statistics
+  year: 2013
   instance: 16th
   styling: International Conference on
   dates:
-  - 2012-05-29
-  - 2012-05-31
+  - 2013-04-29
+  - 2013-05-01
+  chairs:
+  - type: Program Chairs
+    people:
+    - family: Carvalho
+      given: Carlos M.
+      institute: McCombs School of Business and Division of Statistics and Scientific Computation, The University of Texas at Austin
+      url: http://www2.mccombs.utexas.edu/faculty/carlos.carvalho
+    - family: Ravikumar
+      given: Pradeep
+      institute: Department of Computer Science and Division of Statistics and Scientific Computation, The University of Texas at Austin
+      url: http://www.cs.utexas.edu/~pradeepr/
+    - type: Sponsorship Chair
+      people:
+      - family: Sontag
+        given: David
+        institute: New York University
+        url: http://cs.nyu.edu/~dsontag/
+    - type: Proceedings Chair
+      people:
+      - family: Dud&iacute;k
+        given: Miroslav
+        institute: Microsoft Research
+        url: http://www.cs.princeton.edu/~mdudik/
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
