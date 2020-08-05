@@ -31,7 +31,7 @@ conference:
   proceedings:
     url: http://proceedings.mlr.press/v31/
     show: true
-  room: Room
+  room: 
   venue: DoubleTree Paradise Valley Resort
   venue_url: https://doubletree3.hilton.com/en/hotels/arizona/doubletree-resort-by-hilton-hotel-paradise-valley-scottsdale-PHXSJDT/index.html
   location: Scottsdale, AZ, USA
