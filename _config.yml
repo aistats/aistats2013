@@ -55,18 +55,18 @@ conference:
       given: Pradeep
       institute: Department of Computer Science and Division of Statistics and Scientific Computation, The University of Texas at Austin
       url: http://www.cs.utexas.edu/~pradeepr/
-    - type: Sponsorship Chair
-      people:
-      - family: Sontag
-        given: David
-        institute: New York University
-        url: http://cs.nyu.edu/~dsontag/
-    - type: Proceedings Chair
-      people:
-      - family: Dud&iacute;k
-        given: Miroslav
-        institute: Microsoft Research
-        url: http://www.cs.princeton.edu/~mdudik/
+  - type: Sponsorship Chair
+    people:
+    - family: Sontag
+      given: David     
+      institute: New York University
+      url: http://cs.nyu.edu/~dsontag/
+  - type: Proceedings Chair
+    people:
+    - family: Dud&iacute;k
+      given: Miroslav
+      institute: Microsoft Research
+      url: http://www.cs.princeton.edu/~mdudik/
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
