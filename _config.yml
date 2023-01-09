@@ -15,7 +15,7 @@ plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-remote-theme
-remote_theme: lawrennd/proceedings
+remote_theme: aistats/jekyll-theme
 style: aistats
 
 ghub:
@@ -24,49 +24,6 @@ ghub:
 banner: resort.png
 
 
-conference:
-  draft: false # set to True if the programme is draft only.
-  image: HotelDT.jpg
-  hide_tentative: true
-  proceedings:
-    url: http://proceedings.mlr.press/v31/
-    show: true
-  room: 
-  venue: DoubleTree Paradise Valley Resort
-  venue_url: https://doubletree3.hilton.com/en/hotels/arizona/doubletree-resort-by-hilton-hotel-paradise-valley-scottsdale-PHXSJDT/index.html
-  location: Scottsdale, AZ, USA
-  full_name: Artificial Intelligence and Statistics
-  short_name: AISTATS
-  name: Artificial Intelligence and Statistics
-  year: 2013
-  instance: 16th
-  styling: International Conference on
-  dates:
-  - 2013-04-29
-  - 2013-05-01
-  chairs:
-  - type: Program Chairs
-    people:
-    - family: Carvalho
-      given: Carlos M.
-      institute: McCombs School of Business and Division of Statistics and Scientific Computation, The University of Texas at Austin
-      url: http://www2.mccombs.utexas.edu/faculty/carlos.carvalho
-    - family: Ravikumar
-      given: Pradeep
-      institute: Department of Computer Science and Division of Statistics and Scientific Computation, The University of Texas at Austin
-      url: http://www.cs.utexas.edu/~pradeepr/
-  - type: Sponsorship Chair
-    people:
-    - family: Sontag
-      given: David     
-      institute: New York University
-      url: http://cs.nyu.edu/~dsontag/
-  - type: Proceedings Chair
-    people:
-    - family: Dud&iacute;k
-      given: Miroslav
-      institute: Microsoft Research
-      url: http://www.cs.princeton.edu/~mdudik/
 
 # change encoding for the generated output files to utf-8
 encoding: utf-8
